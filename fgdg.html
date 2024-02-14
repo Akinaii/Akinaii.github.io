@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+img{display: none}
+#s1,#s2,#s3{
+    display: none;
+}
+
+#s1:checked ~ #img1,
+#s2:checked ~ #img2,
+#s3:checked ~ #img3{
+     display : block;
+}
+</style>
+<body>
+    <input type="radio"name="name" id="s1">
+    <input type="radio"name="name"id="s2">
+    <input type="radio"name="name"id="s3">
+    <label for="s1">1</label>
+    <label for="s2">2</label>
+    <label for="s3">3</label>
+    <img src="bird.jpeg" alt=""id="img1">
+    <img src="sun.jpg"   alt=""id="img2">
+    <img src="flower.jpg"alt=""id="img3">
+</body> 
+</html>
