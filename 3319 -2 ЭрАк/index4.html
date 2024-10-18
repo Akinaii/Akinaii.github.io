@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-COMPATIBLE" content="ie=edge">
+
+        <title>Пасьянс</title>
+        <style>
+            @keyframes anim{
+                0%{transform: rotate(90deg);}
+                100%{transform: rotate(0);}
+            }
+            img{
+                width: 600px;
+                animation: anim 1s;
+            }
+            #table{
+                display: flex;
+                flex-direction: row;
+            }
+        </style>
+</head>
+<body>
+    <div onclick="show()">
+        <img src="12.webp">
+    </div>
+    <div id='table'></div>
+ <script>
+    let card_name=['6.webp','7.webp', '8.webp','10.webp']
+
+        let table = document.getElementById('table');
+
+        function show(){
+        let card = document.createElement('div');
+        let card_file_name = '<img src="' 
+                             + card_name[2]
+                             +'">';
+        
+        card.innerHTML = card_file_name;
+        table.append(card);
+
+        }
+
+        </script>
+</body>
+</html>
